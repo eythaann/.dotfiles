@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "type": "prompt",
+      "segments": [
+        {
+          "alias": "------- EJECUTION TIME -------",
+          "background": "#707070",
+          "foreground": "#ffffff",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "template": " {{ .FormattedMs }} ",
+          "type": "executiontime",
+          "properties": {
+            "always_enabled": true,
+            "style": "austin"
+          }
+        },
+        {
+          "alias": "------- ACTUAL ROUTE -------",
+          "background": "#247ddc",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "style": "agnoster_short"
+          },
+          "style": "powerline",
+          "template": " \uf07b {{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "template": " on "
+        },
+        {
+          "alias": "------- GIT BRANCH -------",
+          "type": "git",
+          "style": "plain",
+          "foreground": "#83c553",
+          "template": "{{ .HEAD }}",
+          "properties": {
+            "branch_max_length": 20,
+            "branch_icon": " ",
+            "commit_icon": " "
+          }
+        },
+        {
+          "type": "node",
+          "style": "plain",
+          "template": " via "
+        },
+        {
+          "type": "node",
+          "style": "plain",
+          "foreground": "#6CA35E",
+          "template": "\uE718 {{ .Full }}"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "git",
+          "style": "diamond",
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b4",
+          "background": "#98C379",
+          "foreground": "#DCDFE4",
+          "template": "{{ if .Working.Changed }}\uF044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uF692 {{ .StashCount }}{{ end }}",
+          "properties": {
+            "branch_max_length": 20,
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "fetch_worktree_count": true
+          }
+        },
+        {
+          "type": "battery",
+          "style": "diamond",
+          "leading_diamond": " \ue0b6",
+          "trailing_diamond": "\ue0b4",
+          "foreground": "#193549",
+          "background": "#a0a0a0",
+          "background_templates": [
+            "{{if eq \"Charging\" .State.String}}#40c4ff{{end}}",
+            "{{if ge 10 .Percentage}}#ff5722{{end}}"
+          ],
+          "template": "{{ if eq \"Discharging\" .State.String }}{{if ge 10 .Percentage}}{{ .Icon }}{{else if ge 20 .Percentage}}\udb80\udc7b{{else if ge 30 .Percentage}}\udb80\udc7c{{else if ge 40 .Percentage}}\udb80\udc7d{{else if ge 50 .Percentage}}\udb80\udc7e{{else if ge 60 .Percentage}}\udb80\udc7f{{else if ge 70 .Percentage}}\udb80\udc80{{else if ge 80 .Percentage}}\udb80\udc81{{else if ge 90 .Percentage}}\udb80\udc82{{else}}\udb80\udc79{{end}}{{ else }}{{ .Icon }}{{ end }} {{ .Percentage }}%",
+          "properties": {
+            "discharging_icon": "\ue231",
+            "charging_icon": "\uE234",
+            "charged_icon": "\uE22F"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#ff3142",
+          "template": "= @{{.UserName}} ➡️"
+        }
+      ]
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
