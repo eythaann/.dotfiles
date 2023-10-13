@@ -8,10 +8,6 @@ function pushToOneDrive () {
     zip -rq "backup_$(date +'%Y%m%d_%H%M%S').zip" ./ -x "*.zip"
     cd ~
 
-    rsync -a ~/.bashrc $ONEDRIVE_DEV_BACKUP_ROUTE
-    rsync -a ~/initialConfiguration.txt $ONEDRIVE_DEV_BACKUP_ROUTE
-
-    rsync -a ~/.ohMyPoshTheme.omp.json $ONEDRIVE_DEV_BACKUP_ROUTE
     rsync -a ~/cv $ONEDRIVE_DEV_BACKUP_ROUTE
     rsync -a ~/palete-colors $ONEDRIVE_DEV_BACKUP_ROUTE
     rsync -a ~/CSV-exporter $ONEDRIVE_DEV_BACKUP_ROUTE
