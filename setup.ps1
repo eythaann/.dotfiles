@@ -9,3 +9,6 @@ powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installFont
 
 Write-Host "`Creating links to .dotfiles"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\createLinks.ps1"
+
+Write-Host "`Installing WSL"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installWSL.ps1"
