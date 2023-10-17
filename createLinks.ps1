@@ -6,3 +6,5 @@ New-Item -Path "$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTermina
 
 Remove-Item "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\shortcuts.ahk"
 New-Item -Path "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\shortcuts.ahk" -ItemType SymbolicLink -Value "$env:USERPROFILE\.dotfiles\scripts\shortcutsV2.ahk"
+
+New-Item -Path "$env:USERPROFILE\.vscode\extensions\DeepType-Theme" -ItemType SymbolicLink -Value "$env:USERPROFILE\.dotfiles\DeepType-Theme"

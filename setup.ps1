@@ -1,6 +1,3 @@
-Write-Host "`Creating links to .dotfiles"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\createLinks.ps1"
-
 Write-Host "`Installing apps"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installCoreApps.ps1"
 
@@ -9,3 +6,6 @@ powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installShel
 
 Write-Host "`Installing fonts"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installFonts.ps1"
+
+Write-Host "`Creating links to .dotfiles"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\createLinks.ps1"
