@@ -1,6 +1,6 @@
 sudo apt install curl wget exa zip unzip rsync
 
-curl -s https://ohmyposh.dev/install.sh | bash -s
+curl -s https://ohmyposh.dev/install.sh | sudo bash -s
 
 rm -rf ~/.bashrc
 ln -sv ~/.dotfiles/.bashrc ~/.bashrc
