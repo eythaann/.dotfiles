@@ -10,7 +10,7 @@ Write-Host "`nInstaling VsCode"
 winget install Microsoft.VisualStudioCode -s winget
 
 Write-Host "`nInstaling Firefox!!!"
-winget install "Mozilla Firefox" -s msstore
+winget install Mozilla.Firefox -s winget
 winget install firefoxpwa
 
 Write-Host "`nInstaling NordPass"
