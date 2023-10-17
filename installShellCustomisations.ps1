@@ -1,5 +1,7 @@
-Write-Host "Updating PowerShell"
+Write-Host "\nUpdating PowerShell"
 winget install Microsoft.PowerShell -s winget
 
-Write-Host "Installing oh my posh"
+Write-Host "\nInstalling oh my posh"
 winget install JanDeDobbeleer.OhMyPosh -s winget
+
+Write-Host "\nPlease restart the Shell manually."
