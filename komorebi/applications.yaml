@@ -12,3 +12,10 @@
   float_identifiers:
   - kind: Exe
     id: AutoHotkey64.exe
+- name: pinentry
+  identifier:
+    kind: Exe
+    id: pinentry.exe
+  float_identifiers:
+  - kind: Exe
+    id: pinentry.exe
