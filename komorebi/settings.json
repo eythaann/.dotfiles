@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/.dotfiles/komorebi/applications.yaml",
+  "window_hiding_behaviour": "Minimize",
+  "cross_monitor_move_behaviour": "Insert",
+  "alt_focus_hack": true,
+  "default_workspace_padding": 16,
+  "default_container_padding": 10,
+  "active_window_border": false,
+  "active_window_border_colours": {
+    "single": { "r": 66, "g": 165, "b": 245 },
+    "stack": { "r": 256, "g": 165, "b": 66 },
+    "monocle": { "r": 255, "g": 51, "b": 153 }
+  },
+  "mouse_follows_focus": false,
+  "monitors": [
+    {
+      "workspaces": [
+        { "name": "I", "layout": "BSP" },
+        { "name": "II", "layout": "BSP" },
+        { "name": "III", "layout": "BSP", "workspace_rules": [{ "id": "Code.exe", "kind": "Exe" }] },
+        { "name": "IV", "layout": "BSP", "workspace_rules": [{ "id": "WindowsTerminal.exe", "kind": "Exe" }] },
+        { "name": "V", "layout": "BSP" }
+      ]
+    }
+  ]
+}

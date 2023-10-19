@@ -1,0 +1,14 @@
+- name: NordPass
+  identifier:
+    kind: Exe
+    id: NordPass.exe
+  float_identifiers:
+  - kind: Exe
+    id: NordPass.exe
+- name: AutoHotkey
+  identifier:
+    kind: Exe
+    id: AutoHotkey64.exe
+  float_identifiers:
+  - kind: Exe
+    id: AutoHotkey64.exe

@@ -22,4 +22,7 @@ Write-Host "`nInstaling Auto Hot key"
 winget install "AutoHotkey" -s winget
 
 Write-Host "`nInstaling NodeJs"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\shellScripts\nodejs.ps1"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\nodejs.ps1"
+
+Write-Host "`nInstaling Komorebi"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\komorebi.ps1"
