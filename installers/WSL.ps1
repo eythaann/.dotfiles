@@ -2,8 +2,8 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 dism.exe /online /enable-feature /featurename:HypervisorPlatform /all /norestart
 
- wsl --update
- wsl --set-default-version 2
- wsl --install -d Debian --web-download
+wsl --update
+wsl --set-default-version 2
+wsl --install -d Debian --web-download
 
- shutdown /r /t 0
+shutdown /r /t 0

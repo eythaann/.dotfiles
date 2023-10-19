@@ -1,17 +1,9 @@
 Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
 winget install LGUG2Z.komorebi
+Add-Path "C:\Program Files\komorebi\bin"
 
-# Setting on Path
-$komorebiPath = "C:\Program Files\komorebi\bin"
-$envPath = [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::Machine)
-if (-not $envPath.Contains($komorebiPath)) {
-    $newPath = $envPath + ";" + $komorebiPath
-    [System.Environment]::SetEnvironmentVariable("PATH", $newPath, [EnvironmentVariableTarget]::Machine)
-}
-
-Write-Host "`nScheduled on Start"
-
+Write-Host "`nScheduling on Start"
 $taskName = "KomorebiStart"
 $scriptPath = "$env:USERPROFILE\.dotfiles\komorebi\start.ps1"
 
