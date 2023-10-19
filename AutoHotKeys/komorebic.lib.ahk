@@ -1,5 +1,9 @@
 global CurrentGui := ""
 PrintWorkspaceMesagge(WorkspaceName) {
+    global CurrentGui
+    if (CurrentGui != "")
+        return
+
     MyGui := Gui("AlwaysOnTop")
     
     MyGui.SetFont("s14", "Arial")
@@ -127,6 +131,7 @@ CycleMoveToMonitor(cycle_direction) {
 
 MoveToWorkspace(target) {
     RunWait("komorebic.exe move-to-workspace " target, , "Hide")
+    PrintWorkspaceMesagge(target)
 }
 
 MoveToNamedWorkspace(workspace) {
