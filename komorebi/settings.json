@@ -3,7 +3,7 @@
   "app_specific_configuration_path": "$Env:USERPROFILE/.dotfiles/komorebi/applications.yaml",
   "window_hiding_behaviour": "Minimize",
   "cross_monitor_move_behaviour": "Insert",
-  "alt_focus_hack": true,
+  "alt_focus_hack": false,
   "default_workspace_padding": 16,
   "default_container_padding": 10,
   "active_window_border": false,

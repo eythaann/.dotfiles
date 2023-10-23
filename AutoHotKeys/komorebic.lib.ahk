@@ -1,32 +1,38 @@
 global CurrentGui := ""
-PrintWorkspaceMesagge(WorkspaceName) {
+global CurrentHRGN := ""
+
+CloseMsgBox() {
     global CurrentGui
-    if (CurrentGui != "")
-        return
+    global CurrentHRGN
 
-    MyGui := Gui("AlwaysOnTop")
-    
-    MyGui.SetFont("s14", "Arial")
-    MyGui.Add("Text", "Center w150", "You're in " . WorkspaceName)
-
-    MyGui.Opt("-Caption")
-
-    hWnd := MyGui.Hwnd
-    hRgn := DllCall("Gdi32.dll\CreateRoundRectRgn", "int", 0, "int", 0, "int", 300, "int", 66, "int", 16, "int", 16, "Ptr")
-    DllCall("User32.dll\SetWindowRgn", "Ptr", hWnd, "Ptr", hRgn, "int", true)
-
-    MyGui.Show("xCenter yCenter w200 h44")
-
-    CurrentGui := MyGui
-    CloseMsgBox() {
-        DllCall("Gdi32.dll\DeleteObject", "Ptr", hRgn)
-        MyGui.Destroy()
-        CurrentGui := ""
-        return
+    if (CurrentGui == "") {
+       return
     }
 
+    DllCall("Gdi32.dll\DeleteObject", "Ptr", CurrentHRGN)
+    CurrentGui.Destroy()
+    CurrentGui := ""
+}
+
+PrintWorkspaceMesagge(WorkspaceName) {
+    global CurrentGui
+    global CurrentHRGN
+
+    CloseMsgBox()
+    CurrentGui := Gui("AlwaysOnTop")
+
+    CurrentGui.SetFont("s14", "Arial")
+    CurrentGui.Add("Text", "Center w150", "You're in " . WorkspaceName)
+
+    CurrentGui.Opt("-Caption")
+
+    hWnd := CurrentGui.Hwnd
+    CurrentHRGN := DllCall("Gdi32.dll\CreateRoundRectRgn", "int", 0, "int", 0, "int", 300, "int", 66, "int", 16, "int", 16, "Ptr")
+    DllCall("User32.dll\SetWindowRgn", "Ptr", hWnd, "Ptr", CurrentHRGN, "int", true)
+
+    CurrentGui.Show("xCenter yCenter w200 h44")
+
     SetTimer(CloseMsgBox, -500)
-    return
 }
 
 Start(ffm, await_configuration, tcp_port) {

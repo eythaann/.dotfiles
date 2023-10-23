@@ -40,7 +40,7 @@
           "type": "git",
           "style": "plain",
           "foreground": "#83c553",
-          "template": "{{ .HEAD }} {{ if .Working.Changed }}\uf044 {{ .Working.String }} {{ end }}{{ if .Staging.Changed }}{{ if .Working.Changed }}| {{ end }}\uf046 {{ .Staging.String }} {{ end }}{{ if gt .StashCount 0 }}{{ if or (.Working.Changed) (.Staging.Changed) }}| {{ end }}\ueb4b {{ .StashCount }}{{ end }} ",
+          "template": "{{ .HEAD }} {{ if .Working.Changed }}\uf044 {{ .Working.String }} {{ end }}{{ if .Staging.Changed }}{{ if .Working.Changed }}| {{ end }}\uf046 {{ .Staging.String }} {{ end }}{{ if gt .StashCount 0 }}{{ if or (.Working.Changed) (.Staging.Changed) }}| {{ end }}\ueb4b {{ .StashCount }} {{ end }}",
           "properties": {
             "branch_max_length": 20,
             "branch_icon": " ",
@@ -53,7 +53,7 @@
         {
           "type": "node",
           "style": "plain",
-          "template": " via "
+          "template": "via "
         },
         {
           "type": "node",
