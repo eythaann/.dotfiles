@@ -53,7 +53,7 @@
         {
           "type": "node",
           "style": "plain",
-          "template": "via "
+          "template": " via "
         },
         {
           "type": "node",

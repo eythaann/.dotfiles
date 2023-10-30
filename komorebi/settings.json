@@ -6,12 +6,6 @@
   "alt_focus_hack": false,
   "default_workspace_padding": 16,
   "default_container_padding": 10,
-  "active_window_border": false,
-  "active_window_border_colours": {
-    "single": { "r": 66, "g": 165, "b": 245 },
-    "stack": { "r": 256, "g": 165, "b": 66 },
-    "monocle": { "r": 255, "g": 51, "b": 153 }
-  },
   "mouse_follows_focus": false,
   "monitors": [
     {

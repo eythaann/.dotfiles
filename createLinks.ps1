@@ -8,4 +8,7 @@ $startup = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Progra
 Remove-Item "$startup\shortcuts.ahk"
 New-Item -Path "$startup\shortcuts.ahk" -ItemType SymbolicLink -Value "$env:USERPROFILE\.dotfiles\AutoHotKeys\index.ahk"
 
+Remove-Item "$env:USERPROFILE\Documents\My Games"
+New-Item -Path "$env:USERPROFILE\Documents\My Games" -ItemType SymbolicLink -Value "$env:USERPROFILE\OneDrive\Documents\_BadImplementedDocsRoute\My Games"
+
 New-Item -Path "$env:USERPROFILE\.vscode\extensions\DeepType-Theme" -ItemType SymbolicLink -Value "$env:USERPROFILE\.dotfiles\DeepType-Theme"
