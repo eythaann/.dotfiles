@@ -11,7 +11,7 @@
     {
       "workspaces": [
         { "name": "I", "layout": "BSP" },
-        { "name": "II", "layout": "BSP" },
+        { "name": "II", "layout": "BSP", "workspace_rules": [] },
         { "name": "III", "layout": "BSP", "workspace_rules": [{ "id": "Code.exe", "kind": "Exe" }] },
         { "name": "IV", "layout": "BSP", "workspace_rules": [{ "id": "WindowsTerminal.exe", "kind": "Exe" }] },
         { "name": "V", "layout": "BSP" }
