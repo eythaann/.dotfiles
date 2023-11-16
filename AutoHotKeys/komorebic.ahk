@@ -43,15 +43,15 @@
 !y:: FlipLayout("vertical")
 
 ; Workspaces
-!1:: FocusWorkspace(0)
-!2:: FocusWorkspace(1)
-!3:: FocusWorkspace(2)
-!4:: FocusWorkspace(3)
-!5:: FocusWorkspace(4)
+!1:: FocusNamedWorkspace("Media")
+!2:: FocusNamedWorkspace("Browsers")
+!3:: FocusNamedWorkspace("Editors")
+!4:: FocusNamedWorkspace("Terminals")
+!5:: FocusNamedWorkspace("Other")
 
 ; Move windows across workspaces
-!+1:: MoveToWorkspace(0)
-!+2:: MoveToWorkspace(1)
-!+3:: MoveToWorkspace(2)
-!+4:: MoveToWorkspace(3)
-!+5:: MoveToWorkspace(4)
+!+1:: MoveToNamedWorkspace("Media")
+!+2:: MoveToNamedWorkspace("Browsers")
+!+3:: MoveToNamedWorkspace("Editors")
+!+4:: MoveToNamedWorkspace("Terminals")
+!+5:: MoveToNamedWorkspace("Other")

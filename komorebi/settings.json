@@ -1,8 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
-  "app_specific_configuration_path": "$Env:USERPROFILE/.dotfiles/komorebi/applications.yaml",
+  "app_specific_configuration_path": "$Env:USERPROFILE/.dotfiles/komorebi/applications.yml",
   "window_hiding_behaviour": "Minimize",
-  "cross_monitor_move_behaviour": "Insert",
   "alt_focus_hack": false,
   "default_workspace_padding": 16,
   "default_container_padding": 10,
@@ -10,11 +9,11 @@
   "monitors": [
     {
       "workspaces": [
-        { "name": "I", "layout": "BSP" },
-        { "name": "II", "layout": "BSP", "workspace_rules": [] },
-        { "name": "III", "layout": "BSP", "workspace_rules": [{ "id": "Code.exe", "kind": "Exe" }] },
-        { "name": "IV", "layout": "BSP", "workspace_rules": [{ "id": "WindowsTerminal.exe", "kind": "Exe" }] },
-        { "name": "V", "layout": "BSP" }
+        { "name": "Media", "layout": "BSP" },
+        { "name": "Browsers", "layout": "BSP", "workspace_rules": [] },
+        { "name": "Editors", "layout": "BSP", "workspace_rules": [{ "id": "Code.exe", "kind": "Exe" }] },
+        { "name": "Terminals", "layout": "BSP", "workspace_rules": [{ "id": "WindowsTerminal.exe", "kind": "Exe" }] },
+        { "name": "Other", "layout": "BSP" }
       ]
     }
   ]

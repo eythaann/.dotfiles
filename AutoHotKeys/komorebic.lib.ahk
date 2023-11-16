@@ -2,7 +2,7 @@ PrintWorkspaceMesagge(WorkspaceName) {
   message := Gui("AlwaysOnTop")
 
   message.SetFont("s14", "Arial")
-  message.Add("Text", "Center w150", "You're in " . WorkspaceName)
+  message.Add("Text", "Center w160", WorkspaceName)
 
   message.Opt("-Caption")
 
@@ -126,6 +126,7 @@ MoveToWorkspace(target) {
 
 MoveToNamedWorkspace(workspace) {
   RunWait("komorebic.exe move-to-named-workspace " workspace, , "Hide")
+  PrintWorkspaceMesagge(workspace)
 }
 
 CycleMoveToWorkspace(cycle_direction) {
@@ -171,6 +172,7 @@ FocusMonitorWorkspace(target_monitor, target_workspace) {
 
 FocusNamedWorkspace(workspace) {
   RunWait("komorebic.exe focus-named-workspace " workspace, , "Hide")
+  PrintWorkspaceMesagge(workspace)
 }
 
 CycleMonitor(cycle_direction) {
