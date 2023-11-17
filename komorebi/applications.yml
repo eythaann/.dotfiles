@@ -28,7 +28,7 @@
     id: steam.exe
   float_identifiers:
   - kind: Title
-    id: Login in to Steam
+    id: Sign in to Steam
   - kind: Title
     id: Properties
     matching_strategy: Contains

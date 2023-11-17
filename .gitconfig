@@ -1,10 +1,8 @@
 [user]
 	email = eythan.cvt@gmail.com
 	name = eythaann
-	signingkey = B15717D663123962BB76710687AF2760553AFD8F
-[commit]
-	gpgsign = true
 [gpg]
 	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
 [safe]
 	directory = C:/Users/dlmqc/.dotfiles
+	directory = C:/Users/dlmqc/.dotfiles/DeepType-Theme
