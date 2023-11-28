@@ -118,6 +118,10 @@ alias gpsf='git push origin HEAD --no-verify -f'
 ######################### deno #########################
 export PATH="$HOME/.deno/bin:$PATH"
 
+######################### brew #########################
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+alias kubectl="kubecolor"
+
 ######################### nvm ##########################
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
