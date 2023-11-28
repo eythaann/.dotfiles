@@ -1,6 +1,7 @@
 sudo apt install curl wget exa zip unzip rsync
 
 ~/.dotfiles/installers/node.bash
+~/.dotfiles/installers/brew.sh
 
 curl -s https://ohmyposh.dev/install.sh | sudo bash -s
 
