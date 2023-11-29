@@ -55,16 +55,17 @@
         {
             "backgroundImage": "C:\\Users\\dlmqc\\OneDrive\\Desktop\\_\\Temas\\Terminal\\2121741-scaled.png",
             "backgroundImageOpacity": 1.0,
-            "colorScheme": "Tango Dark",
+            "colorScheme": "cyberpunk",
             "font": 
             {
                 "face": "FiraCode Nerd Font Mono",
                 "size": 10.0,
-                "weight": "semi-light"
+                "weight": "normal"
             },
             "intenseTextStyle": "bright",
             "padding": "12",
-            "scrollbarState": "hidden"
+            "scrollbarState": "hidden",
+            "useAtlasEngine": false
         },
         "list": 
         [
@@ -287,29 +288,6 @@
             "yellow": "#C4A000"
         },
         {
-            "background": "#300A24",
-            "black": "#171421",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#08458F",
-            "brightCyan": "#2C9FB3",
-            "brightGreen": "#26A269",
-            "brightPurple": "#A347BA",
-            "brightRed": "#C01C28",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#A2734C",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#FFFFFF",
-            "green": "#26A269",
-            "name": "Ubuntu-ColorScheme",
-            "purple": "#881798",
-            "red": "#C21A23",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#A2734C"
-        },
-        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -331,51 +309,53 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
+        },
+        {
+            "background": "#151515",
+            "black": "#101010",
+            "blue": "#7DC1CF",
+            "brightBlack": "#404040",
+            "brightBlue": "#4E9FB1",
+            "brightCyan": "#42717B",
+            "brightGreen": "#A0CF5D",
+            "brightPurple": "#8542FF",
+            "brightRed": "#D23D3D",
+            "brightWhite": "#DDDDDD",
+            "brightYellow": "#F39D21",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#6D878D",
+            "foreground": "#D7D0C7",
+            "green": "#B8D68C",
+            "name": "X Dotshare",
+            "purple": "#9B64FB",
+            "red": "#E84F4F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#DDDDDD",
+            "yellow": "#E1AA5D"
+        },
+        {
+            "background": "#1C1B21",
+            "black": "#000000",
+            "blue": "#00A2D9",
+            "brightBlack": "#404040",
+            "brightBlue": "#1BCCFD",
+            "brightCyan": "#99D6FC",
+            "brightGreen": "#21F6BC",
+            "brightPurple": "#F09AFE",
+            "brightRed": "#FF5B5E",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFD83",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#84B8D9",
+            "foreground": "#E0E0E0",
+            "green": "#00D994",
+            "name": "cyberpunk",
+            "purple": "#B365D9",
+            "red": "#D94446",
+            "selectionBackground": "#FFFFFF",
+            "white": "#F0F0F0",
+            "yellow": "#E6E15F"
         }
     ],
-    "themes": 
-    [
-        {
-            "name": "legacyDark",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "dark",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacyLight",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "light",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacySystem",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "system",
-                "useMica": false
-            }
-        }
-    ]
+    "themes": []
 }

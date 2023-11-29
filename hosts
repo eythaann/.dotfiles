@@ -1,0 +1,10 @@
+# localhost
+127.0.0.1	dev.local
+::1	dev.local
+
+# Added by Docker Desktop
+192.168.60.8	host.docker.internal
+192.168.60.8	gateway.docker.internal
+
+# To allow the same kube context to work on the host and the container:
+127.0.0.1	kubernetes.docker.internal

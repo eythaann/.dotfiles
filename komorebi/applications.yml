@@ -33,7 +33,10 @@
     id: Properties
     matching_strategy: Contains
   - kind: Title
-    id: offer
+    id: Offer
+    matching_strategy: Contains
+  - kind: Title
+    id: Friend
     matching_strategy: Contains
 
 - name: Explorer
@@ -44,3 +47,13 @@
   - kind: Title
     id: "% complete"
     matching_strategy: Contains
+
+- name: Assetto
+  identifier:
+    kind: Exe
+    id: "Content Manager.exe"
+  float_identifiers:
+  - kind: Exe
+    id: "Content Manager.exe"
+  - kind: Title
+    id: Assetto Corsa

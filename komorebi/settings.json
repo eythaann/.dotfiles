@@ -9,11 +9,52 @@
   "monitors": [
     {
       "workspaces": [
-        { "name": "Media", "layout": "BSP" },
-        { "name": "Browsers", "layout": "BSP", "workspace_rules": [] },
-        { "name": "Editors", "layout": "BSP", "workspace_rules": [{ "id": "Code.exe", "kind": "Exe" }] },
-        { "name": "Terminals", "layout": "BSP", "workspace_rules": [{ "id": "WindowsTerminal.exe", "kind": "Exe" }] },
-        { "name": "Other", "layout": "BSP" }
+        {
+          "name": "Media",
+          "layout": "BSP"
+        },
+        {
+          "name": "Browsers",
+          "layout": "BSP",
+          "workspace_rules": [
+            {
+              "id": "Mozilla Firefox",
+              "kind": "Title",
+              "matching_strategy": "EndsWith"
+            }
+          ]
+        },
+        {
+          "name": "Editors",
+          "layout": "BSP",
+          "workspace_rules": [
+            {
+              "id": "Code.exe",
+              "kind": "Exe"
+            }
+          ]
+        },
+        {
+          "name": "Terminals",
+          "layout": "BSP",
+          "workspace_rules": [
+            {
+              "id": "WindowsTerminal.exe",
+              "kind": "Exe"
+            }
+          ]
+        },
+        {
+          "name": "Other",
+          "layout": "BSP",
+          "workspace_rules": [
+            {
+              "id": "Docker",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            }
+          ]
+        }
       ]
     }
   ]

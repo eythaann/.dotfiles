@@ -12,6 +12,9 @@ winget install Valve.Steam
 Write-Host "`nInstaling VsCode"
 winget install Microsoft.VisualStudioCode -s winget
 
+Write-Host "`nInstaling Docker"
+winget install Docker.DockerDesktop -s winget
+
 Write-Host "`nInstaling Auto Hot key"
 winget install "AutoHotkey" -s winget
 

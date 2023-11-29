@@ -12,3 +12,6 @@ Remove-Item "$env:USERPROFILE\Documents\My Games"
 New-Item -Path "$env:USERPROFILE\Documents\My Games" -ItemType SymbolicLink -Value "$env:USERPROFILE\OneDrive\Documents\_BadImplementedDocsRoute\My Games"
 
 New-Item -Path "$env:USERPROFILE\.vscode\extensions\DeepType-Theme" -ItemType SymbolicLink -Value "$env:USERPROFILE\.dotfiles\DeepType-Theme"
+
+Remove-Item "C:\Windows\System32\drivers\etc\hosts"
+New-Item -Path "$env:USERPROFILE\.dotfiles\hosts" -ItemType HardLink -Value "C:\Windows\System32\drivers\etc\hosts"
