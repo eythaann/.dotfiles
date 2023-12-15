@@ -63,7 +63,7 @@
                 "weight": "normal"
             },
             "intenseTextStyle": "bright",
-            "padding": "12",
+            "padding": "16",
             "scrollbarState": "hidden",
             "useAtlasEngine": false
         },

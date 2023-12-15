@@ -1,0 +1,42 @@
+- name: NordPass
+  identifier:
+    kind: Exe
+    id: NordPass.exe
+  float_identifiers:
+    - kind: Exe
+      id: NordPass.exe
+
+- name: AutoHotkey
+  identifier:
+    kind: Exe
+    id: AutoHotkey64.exe
+  float_identifiers:
+    - kind: Exe
+      id: AutoHotkey64.exe
+
+- name: pinentry
+  identifier:
+    kind: Exe
+    id: pinentry.exe
+  float_identifiers:
+    - kind: Exe
+      id: pinentry.exe
+
+- name: Explorer
+  identifier:
+    kind: Exe
+    id: explorer.exe
+  float_identifiers:
+    - kind: Title
+      id: "% complete"
+      matching_strategy: Contains
+
+- name: Assetto
+  identifier:
+    kind: Exe
+    id: "Content Manager.exe"
+  float_identifiers:
+    - kind: Exe
+      id: "Content Manager.exe"
+    - kind: Title
+      id: Assetto Corsa

@@ -4,9 +4,9 @@ winget install LGUG2Z.komorebi
 
 Write-Host "`nScheduling on Start"
 $taskName = "KomorebiStart"
-$scriptPath = "$env:USERPROFILE\.dotfiles\komorebi\start.ps1"
+$command = "komorebi -c $Env:USERPROFILE\.config\komorebi\settings.json"
 
-$action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-WindowStyle Hidden -ExecutionPolicy Bypass -File $scriptPath"
+$action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-WindowStyle Hidden -Command $command"
 $trigger = New-ScheduledTaskTrigger -AtLogon
 $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -Hidden
 

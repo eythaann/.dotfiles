@@ -1,1 +1,0 @@
-komorebic start -c $Env:USERPROFILE\.dotfiles\komorebi\settings.json

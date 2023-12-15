@@ -1,26 +1,27 @@
 #Include "%A_ScriptDir%\komorebic.lib.ahk"
 
 ; Focus windows
-!h:: Focus("left")
-!j:: Focus("down")
-!k:: Focus("up")
-!l:: Focus("right")
-!+[:: CycleFocus("previous")
-!+]:: CycleFocus("next")
+RAlt & w:: Focus("up")
+RAlt & a:: Focus("left")
+RAlt & s:: Focus("down")
+RAlt & d:: Focus("right")
+
+;!+[:: CycleFocus("previous")
+;!+]:: CycleFocus("next")
 
 ; Move windows
-!+h:: Move("left")
-!+j:: Move("down")
-!+k:: Move("up")
-!+l:: Move("right")
-!+Enter:: Promote()
+;#+Enter:: Promote()
+#Left::Move("left")
+#Right::Move("right")
+#Up::Move("up")
+#Down::Move("down")
 
 ; Stack windows
-;!Left::Stack("left")
-;!Right::Stack("right")
-;!Up::Stack("up")
-;!Down::Stack("down")
-!;:: Unstack()
+#w::Stack("up")
+#a::Stack("left")
+#s::Stack("down")
+#d::Stack("right")
+;!;:: Unstack()
 ![:: CycleStack("previous")
 !]:: CycleStack("next")
 
@@ -31,8 +32,8 @@
 !+-:: ResizeAxis("vertical", "decrease")
 
 ; Manipulate windows
-!f:: ToggleFloat()
-;!+f::ToggleMonocle()
+#+f:: ToggleFloat()
+;#m::ToggleMonocle()
 
 ; Window manager options
 !+r:: Retile()

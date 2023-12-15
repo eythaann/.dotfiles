@@ -6,10 +6,28 @@
       "type": "prompt",
       "segments": [
         {
+          "type": "text",
+          "style": "plain",
+          "background": "#333",
+          "template": "⠀"
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "background": "#444",
+          "template": "⠀"
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "background": "#555",
+          "template": "⠀"
+        },
+        {
           "alias": "------- EJECUTION TIME -------",
-          "background": "#707070",
-          "foreground": "#ffffff",
-          "leading_diamond": "\ue0b6",
+          "background": "#666",
+          "foreground": "#fff",
+          "leading_diamond": "",
           "style": "diamond",
           "template": " {{ .FormattedMs }} ",
           "type": "executiontime",
@@ -40,7 +58,7 @@
           "type": "git",
           "style": "plain",
           "foreground": "#83c553",
-          "template": "{{ .HEAD }} {{ if .Working.Changed }}\uf044 {{ .Working.String }} {{ end }}{{ if .Staging.Changed }}{{ if .Working.Changed }}| {{ end }}\uf046 {{ .Staging.String }} {{ end }}{{ if gt .StashCount 0 }}{{ if or (.Working.Changed) (.Staging.Changed) }}| {{ end }}\ueb4b {{ .StashCount }} {{ end }}",
+          "template": "{{ .HEAD }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if .Staging.Changed }}{{ if .Working.Changed }} |{{ end }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}{{ if or (.Working.Changed) (.Staging.Changed) }} |{{ end }} \ueb4b {{ .StashCount }}{{ end }}",
           "properties": {
             "branch_max_length": 20,
             "branch_icon": " ",

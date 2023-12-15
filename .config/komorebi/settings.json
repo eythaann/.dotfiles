@@ -1,11 +1,26 @@
 {
   "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
-  "app_specific_configuration_path": "$Env:USERPROFILE/.dotfiles/komorebi/applications.yml",
+  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.yml",
   "window_hiding_behaviour": "Minimize",
   "alt_focus_hack": false,
   "default_workspace_padding": 16,
   "default_container_padding": 10,
   "mouse_follows_focus": false,
+  "float_rules": [
+    {
+      "kind": "Title",
+      "id": "(.*install.*)|([Ss]etup)",
+      "matching_strategy": "Regex"
+    },
+    {
+      "kind": "Exe",
+      "id": "steam.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "steamwebhelper.exe"
+    }
+  ],
   "monitors": [
     {
       "workspaces": [
@@ -20,7 +35,7 @@
             {
               "id": "Mozilla Firefox",
               "kind": "Title",
-              "matching_strategy": "EndsWith"
+              "matching_strategy": "Contains"
             }
           ]
         },
