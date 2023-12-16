@@ -6,8 +6,4 @@
 #t:: RUN "wt"
 #Enter:: RUN "wt"
 
-#\:: {
-  Reload
-}
-
-#f::RUN "C:\Program Files\Mozilla Firefox\firefox.exe"
+#+f::RUN "C:\Program Files\Mozilla Firefox\firefox.exe"
