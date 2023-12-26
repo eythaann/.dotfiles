@@ -122,6 +122,10 @@ export PATH="$HOME/.deno/bin:$PATH"
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 alias kubectl="kubecolor"
 
+######################### go #########################
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$HOME/go/bin"
+
 ######################### nvm ##########################
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -164,12 +168,22 @@ print_space_between_commands () {
     echo
 }
 
-print_line () {
+print_line () {    
+    exclude_commands=("source" "clear" "[ -d")
+    for cmd in "${exclude_commands[@]}"; do
+        if [[ "$lastExecuteCommand" == $cmd* ]]; then
+            lastExecuteCommand=$BASH_COMMAND
+            return
+        fi
+    done
+
     if [ "$BASH_COMMAND" = "_omp_hook" ]; then 
         # Print the horizontal line
         cols=$(tput cols)
         printf '\n\e[90m%*s\e[0m\n\n' $cols | tr ' ' '-'
     fi
+
+    lastExecuteCommand=$BASH_COMMAND
 }
 trap 'print_line' DEBUG
 
