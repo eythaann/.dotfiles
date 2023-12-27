@@ -1,10 +1,14 @@
-Write-Host "`nInstaling Firefox!!!"
+Write-Host "`nInstaling Firefox adn Thunderbird"
 winget install Mozilla.Firefox -s winget
-winget install firefoxpwa
+winget install Mozilla.Thunderbird -s winget
+#winget install firefoxpwa
 
-Write-Host "`nInstaling NordPass"
+Write-Host "`nInstaling KeePassXC"
+winget install KeePassXCTeam.KeePassXC -s mstore
+
+<# Write-Host "`nInstaling NordPass"
 winget settings --enable InstallerHashOverride
-winget install NordSecurity.NordPass --ignore-security-hash
+winget install NordSecurity.NordPass --ignore-security-hash #>
 
 Write-Host "`nInstaling Steam"
 winget install Valve.Steam
