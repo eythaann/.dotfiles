@@ -1,29 +1,31 @@
 Write-Host "`nInstaling Firefox adn Thunderbird"
-winget install Mozilla.Firefox -s winget
-winget install Mozilla.Thunderbird -s winget
-#winget install firefoxpwa
+winget install --id Mozilla.Firefox
+winget install --id filips.FirefoxPWA
 
 Write-Host "`nInstaling KeePassXC"
-winget install KeePassXCTeam.KeePassXC -s mstore
+winget install --id KeePassXCTeam.KeePassXC
+
+Write-Host "`nInstaling Spark Email Client"
+winget install --id XPFCS9QJBKTHVZ -s msstore
 
 <# Write-Host "`nInstaling NordPass"
 winget settings --enable InstallerHashOverride
 winget install NordSecurity.NordPass --ignore-security-hash #>
 
 Write-Host "`nInstaling Steam"
-winget install Valve.Steam
+winget install --id Valve.Steam
 
 Write-Host "`nInstaling VsCode"
-winget install Microsoft.VisualStudioCode -s winget
+winget install --id Microsoft.VisualStudioCode
 
 Write-Host "`nInstaling Docker"
-winget install Docker.DockerDesktop -s winget
+winget install --id Docker.DockerDesktop
 
 Write-Host "`nInstaling Auto Hot key"
-winget install "AutoHotkey" -s winget
+winget install --id AutoHotkey.AutoHotkey
 
 Write-Host "`nInstaling Gpg"
-winget install GnuPG.Gpg4win -s winget
+winget install --id GnuPG.Gpg4win
 
 Write-Host "`nInstaling NodeJs"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\nodejs.ps1"
