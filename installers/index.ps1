@@ -1,3 +1,6 @@
+Write-Host "\nUpdating PowerShell"
+winget install Microsoft.PowerShell -s winget
+
 Write-Host "`nInstaling Firefox adn Thunderbird"
 winget install --id Mozilla.Firefox
 winget install --id filips.FirefoxPWA

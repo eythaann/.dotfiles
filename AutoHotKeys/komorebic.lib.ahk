@@ -1,9 +1,10 @@
 PrintWorkspaceMesagge(WorkspaceName) {
-  message := Gui("AlwaysOnTop")
+  message := Gui("AlwaysOnTop ToolWindow")
 
   message.SetFont("s14", "Arial")
   message.Add("Text", "Center w160", WorkspaceName)
 
+  ;WinSetTransColor("FFFFFF" " 150", message)
   message.Opt("-Caption")
 
   HRGN := DllCall("Gdi32.dll\CreateRoundRectRgn", "int", 0, "int", 0, "int", 300, "int", 66, "int", 16, "int", 16, "Ptr")
@@ -171,7 +172,8 @@ FocusMonitorWorkspace(target_monitor, target_workspace) {
 }
 
 FocusNamedWorkspace(workspace) {
-  RunWait("komorebic.exe focus-named-workspace " workspace, , "Hide")
+  RunWait("komorebic.exe focus-named-workspace NULL", , "Hide")
+  SetTimer(() => RunWait("komorebic.exe focus-named-workspace " workspace, , "Hide"), -200)
   PrintWorkspaceMesagge(workspace)
 }
 

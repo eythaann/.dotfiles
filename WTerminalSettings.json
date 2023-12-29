@@ -357,5 +357,6 @@
             "yellow": "#E6E15F"
         }
     ],
+    "showTabsInTitlebar": true,
     "themes": []
 }

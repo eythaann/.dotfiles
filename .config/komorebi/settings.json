@@ -6,10 +6,21 @@
   "default_workspace_padding": 16,
   "default_container_padding": 10,
   "mouse_follows_focus": false,
+  "global_work_area_offset": {
+    "left": 0,
+    "top": 0,
+    "right": 0,
+    "bottom": 80
+  },
   "float_rules": [
     {
       "kind": "Title",
       "id": "(.*install.*)|([Ss]etup)",
+      "matching_strategy": "Regex"
+    },
+    {
+      "kind": "Title",
+      "id": "(?i)complete",
       "matching_strategy": "Regex"
     },
     {
@@ -26,16 +37,21 @@
       "workspaces": [
         {
           "name": "Media",
-          "layout": "BSP"
+          "layout": "BSP",
+          "workspace_rules": [
+            {
+              "id": "Spark Desktop.exe",
+              "kind": "Exe"
+            }
+          ]
         },
         {
           "name": "Browsers",
           "layout": "BSP",
           "workspace_rules": [
             {
-              "id": "Mozilla Firefox",
-              "kind": "Title",
-              "matching_strategy": "Contains"
+              "id": "firefox.exe",
+              "kind": "Exe"
             }
           ]
         },
@@ -69,6 +85,10 @@
               "matching_strategy": "Contains"
             }
           ]
+        },
+        {
+          "name": "NULL",
+          "layout": "BSP"
         }
       ]
     }
