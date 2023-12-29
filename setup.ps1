@@ -1,14 +1,23 @@
-Write-Host "`nInstalling Customizations"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\Customizations.ps1"
+function Next([string]$title) {
+  Write-Host "`n============================================================================================"
+  Write-Host "                                   $title"
+  Write-Host "============================================================================================`n"
+}
 
-Write-Host "`nInstalling fonts"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\Fonts.ps1"
+Next "Installing Customizations"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\customizations\index.ps1"
 
-Write-Host "`nInstalling apps"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\index.ps1"
+Next "Installing fonts"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\fonts\index.ps1"
 
-Write-Host "`nCreating links to .dotfiles"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\createLinks.ps1"
+Next "Installing apps"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\apps\index.ps1"
 
-Write-Host "`nInstalling WSL"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\WSL.ps1"
+Next "Creating links to .dotfiles"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\others\index.ps1"
+
+Next "Configuring Git"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\git\index.ps1"
+
+Next "Installing WSL"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\wsl\index.ps1"

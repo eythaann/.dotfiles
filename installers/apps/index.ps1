@@ -1,4 +1,4 @@
-Write-Host "\nUpdating PowerShell"
+Write-Host "`nUpdating PowerShell"
 winget install Microsoft.PowerShell -s winget
 
 Write-Host "`nInstaling Firefox adn Thunderbird"
@@ -31,7 +31,8 @@ Write-Host "`nInstaling Gpg"
 winget install --id GnuPG.Gpg4win
 
 Write-Host "`nInstaling NodeJs"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\nodejs.ps1"
+winget install OpenJS.NodeJS.LTS -s winget
+winget install CoreyButler.NVMforWindows -s winget
 
 Write-Host "`nInstaling Komorebi"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\komorebi.ps1"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\apps\komorebi.ps1"

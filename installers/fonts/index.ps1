@@ -1,4 +1,4 @@
-$SourceDir   = "$env:USERPROFILE\.dotfiles\fonts"
+$SourceDir   = "$env:USERPROFILE\.dotfiles\installers\fonts\assets"
 $Source      = "$SourceDir\*"
 $Destination = (New-Object -ComObject Shell.Application).Namespace(0x14)
 $TempFolder  = "C:\Windows\Temp\Fonts"

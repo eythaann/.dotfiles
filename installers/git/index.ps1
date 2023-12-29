@@ -1,4 +1,6 @@
-Write-Host "`nCreating Shh Keys"
+Remove-Item "$env:USERPROFILE\.gitconfig"
+New-Item -Path "$env:USERPROFILE\.gitconfig" -ItemType SymbolicLink -Value "$env:USERPROFILE\.dotfiles\.gitconfig"
+
 ssh-keygen -t ed25519
 
 Get-Service -Name ssh-agent | Set-Service -StartupType Manual
