@@ -7,5 +7,6 @@
 [safe]
 	directory = C:/Users/dlmqc/.dotfiles
 	directory = C:/Users/dlmqc/.dotfiles/DeepType-Theme
+	directory = C:/Users/dlmqc/repos/DeepType-Theme
 [commit]
 	gpgsign = true

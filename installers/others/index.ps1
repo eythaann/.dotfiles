@@ -10,3 +10,8 @@ New-Item -Path "$env:USERPROFILE\Documents\My Games" -ItemType SymbolicLink -Val
 # Config Files
 Remove-Item "$env:USERPROFILE\.config"
 New-Item -Path "$env:USERPROFILE\.config" -ItemType SymbolicLink -Value "$env:USERPROFILE\.dotfiles\.config"
+
+$scoop = Read-Host "Do you wanna intall scoop? (yes) yes | no"
+if ($scoop -ne "no") {
+  ~\.dotfiles\installers\others\scoop.ps1
+}

@@ -33,6 +33,7 @@ winget install --id GnuPG.Gpg4win
 Write-Host "`nInstaling NodeJs"
 winget install OpenJS.NodeJS.LTS -s winget
 winget install CoreyButler.NVMforWindows -s winget
+npm install -g @vscode/vsce
 
 Write-Host "`nInstaling Komorebi"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\apps\komorebi.ps1"

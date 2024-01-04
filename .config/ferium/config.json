@@ -5,7 +5,7 @@
     {
       "name": "eythan-with-mods",
       "output_dir": "\\\\?\\C:\\Users\\dlmqc\\OneDrive\\Documents\\minecraft\\mods",
-      "game_version": "1.20.1",
+      "game_version": "1.20.2",
       "mod_loader": "Fabric",
       "mods": [
         {

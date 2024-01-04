@@ -28,11 +28,11 @@ powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\
 Next "Installing apps"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\apps\index.ps1"
 
-Next "Creating links to .dotfiles"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\others\index.ps1"
-
 Next "Configuring Git"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\git\index.ps1"
+
+Next "Others"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\others\index.ps1"
 
 Next "Installing WSL"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\wsl\index.ps1"
