@@ -33,4 +33,4 @@ foreach ($entry in $sshKeyListTable) {
 }
 
 gh ssh-key add "$Env:USERPROFILE\.dotfiles\.ssh\id_ed25519.pub" --title AuthKey --type authentication
-gh ssh-key add "$Env:USERPROFILE\.dotfiles\.ssh\id_ed25519.pub" --title SingKey --type signing
+gh ssh-key add "$Env:USERPROFILE\.dotfiles\.ssh\id_ed25519.pub" --title SignKey --type signing
