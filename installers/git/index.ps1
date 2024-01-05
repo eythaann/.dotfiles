@@ -21,8 +21,16 @@ Start-Service ssh-agent
 
 ssh-add "$Env:USERPROFILE\.dotfiles\.ssh\id_ed25519"
 
-Get-Content "$Env:USERPROFILE\.dotfiles\.ssh\id_ed25519.pub" | clip
+winget install --id GitHub.cli
+gh auth login
+gh auth refresh -h github.com -s admin:ssh_signing_key
 
-Write-Host "Copied RSA PUB on clipboard."
-Start-Process "https://github.com/settings/keys"
-Pause "Did you add the key in github?"
+$sshKeyListTable = gh ssh-key list | ConvertFrom-String -PropertyNames "Title", "KeyType", "Key", "Added", "Id", "Type"
+foreach ($entry in $sshKeyListTable) {
+  if ($entry.Type -eq "authentication") {
+    gh ssh-key delete $entry.Id -y
+  }
+}
+
+gh ssh-key add "$Env:USERPROFILE\.dotfiles\.ssh\id_ed25519.pub" --title AuthKey --type authentication
+gh ssh-key add "$Env:USERPROFILE\.dotfiles\.ssh\id_ed25519.pub" --title SingKey --type signing
