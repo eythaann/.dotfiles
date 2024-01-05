@@ -1,6 +1,6 @@
 # link .gitconfig
 Remove-Item "$env:USERPROFILE\.gitconfig"
-New-Item -Path "$env:USERPROFILE\.gitconfig" -ItemType SymbolicLink -Value "$env:USERPROFILE\.dotfiles\.gitconfig"
+New-Item -Path "$env:USERPROFILE\.gitconfig" -ItemType SymbolicLink -Value "$env:USERPROFILE\.dotfiles\.config\git\config"
 
 Push-Location "$env:USERPROFILE\.dotfiles"
 # change from http to ssh

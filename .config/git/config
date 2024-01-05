@@ -10,3 +10,5 @@
 	directory = C:/Users/dlmqc/repos/DeepType-Theme
 [commit]
 	gpgsign = true
+[submodule]
+	recurse = true
