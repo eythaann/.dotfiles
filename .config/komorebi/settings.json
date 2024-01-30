@@ -15,12 +15,7 @@
   "float_rules": [
     {
       "kind": "Title",
-      "id": "(.*install.*)|([Ss]etup)",
-      "matching_strategy": "Regex"
-    },
-    {
-      "kind": "Title",
-      "id": "(?i)complete",
+      "id": "(.*[Ii]nstall.*)|(.*[Ss]etup.*)|(.*[Cc]omplete.*)",
       "matching_strategy": "Regex"
     },
     {

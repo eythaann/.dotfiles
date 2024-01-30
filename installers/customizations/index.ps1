@@ -5,5 +5,5 @@ Remove-Item "$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_8
 New-Item -Path "$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Value "$env:USERPROFILE\.dotfiles\.config\wterminal\config.json"
 
 # Settings profile folfer
-$rutaRegistro = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders'
-New-ItemProperty -Path $rutaRegistro -Name Personal -Value '%USERPROFILE%\.config' -Type ExpandString -Force
+#$rutaRegistro = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders'
+#New-ItemProperty -Path $rutaRegistro -Name Personal -Value '%USERPROFILE%\.config' -Type ExpandString -Force

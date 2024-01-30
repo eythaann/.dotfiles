@@ -57,7 +57,7 @@
           "alias": "------- GIT BRANCH -------",
           "type": "git",
           "style": "plain",
-          "foreground": "#83c553",
+          "foreground": "green",
           "template": "{{ .HEAD }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if .Staging.Changed }}{{ if .Working.Changed }} |{{ end }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}{{ if or (.Working.Changed) (.Staging.Changed) }} |{{ end }} \ueb4b {{ .StashCount }}{{ end }}",
           "properties": {
             "branch_max_length": 20,
@@ -71,13 +71,26 @@
         {
           "type": "node",
           "style": "plain",
-          "template": " via "
+          "template": " via <green>\uE718 {{ .Full }}</>"
         },
         {
-          "type": "node",
+          "type": "rust",
           "style": "plain",
-          "foreground": "#6CA35E",
-          "template": "\uE718 {{ .Full }}"
+          "template": " via <lightRed> {{ .Full }}</>"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "darkGray",
+          "properties": {
+            "time_format": "15:04:05"
+          }
         }
       ]
     },

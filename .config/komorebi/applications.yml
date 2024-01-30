@@ -39,3 +39,11 @@
       id: "Content Manager.exe"
     - kind: Title
       id: Assetto Corsa
+
+- name: PS3
+  identifier:
+    kind: Exe
+    id: "rpcs3.exe"
+  float_identifiers:
+    - kind: Exe
+      id: "rpcs3.exe"

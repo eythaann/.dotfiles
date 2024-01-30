@@ -18,7 +18,9 @@ winget install NordSecurity.NordPass --ignore-security-hash #>
 Write-Host "`nInstaling Steam"
 winget install --id Valve.Steam
 
-Write-Host "`nInstaling VsCode"
+Write-Host "`nInstaling Visual Studio & Code"
+winget install --id Microsoft.VisualStudio.2022.Community
+winget install --id Microsoft.VisualStudio.2022.BuildTools
 winget install --id Microsoft.VisualStudioCode
 
 Write-Host "`nInstaling Docker"
@@ -27,13 +29,23 @@ winget install --id Docker.DockerDesktop
 Write-Host "`nInstaling Auto Hot key"
 winget install --id AutoHotkey.AutoHotkey
 
-Write-Host "`nInstaling Gpg"
-winget install --id GnuPG.Gpg4win
+<# Write-Host "`nInstaling Gpg"
+winget install --id GnuPG.Gpg4win #>
 
 Write-Host "`nInstaling NodeJs"
 winget install OpenJS.NodeJS.LTS -s winget
-winget install CoreyButler.NVMforWindows -s winget
+
+Write-Host "`nInstaling Rust"
+winget install --id Rustlang.Rustup
+
+# vscode extensions publisher
 npm install -g @vscode/vsce
+
+Write-Host "`nInstaling Deno"
+winget install deno
+
+Write-Host "`nInstaling Zoom"
+winget install --id XP99J3KP4XZ4VV
 
 Write-Host "`nInstaling Komorebi"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\apps\komorebi.ps1"

@@ -75,15 +75,21 @@
           }
         },
         {
+          "name": "Nvidium",
+          "identifier": {
+            "ModrinthProject": "SfMw2IZN"
+          }
+        },
+        {
           "name": "Sodium",
           "identifier": {
             "ModrinthProject": "AANobbMI"
           }
         },
         {
-          "name": "Starlight (Fabric)",
+          "name": "Tom's Simple Storage Mod",
           "identifier": {
-            "ModrinthProject": "H8CaAYZC"
+            "ModrinthProject": "XZNI4Cpy"
           }
         },
         {
