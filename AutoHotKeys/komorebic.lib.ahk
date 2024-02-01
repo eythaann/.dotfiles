@@ -172,8 +172,9 @@ FocusMonitorWorkspace(target_monitor, target_workspace) {
 }
 
 FocusNamedWorkspace(workspace) {
-  RunWait("komorebic.exe focus-named-workspace NULL", , "Hide")
-  SetTimer(() => RunWait("komorebic.exe focus-named-workspace " workspace, , "Hide"), -200)
+  ;RunWait("komorebic.exe focus-named-workspace NULL", , "Hide")
+  ;SetTimer(() => RunWait("komorebic.exe focus-named-workspace " workspace, , "Hide"), -200)
+  RunWait("komorebic.exe focus-named-workspace " workspace, , "Hide")
   PrintWorkspaceMesagge(workspace)
 }
 

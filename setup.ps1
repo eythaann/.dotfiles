@@ -25,11 +25,11 @@ powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\
 Next "Installing fonts"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\fonts\index.ps1"
 
-Next "Installing apps"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\apps\index.ps1"
-
 Next "Configuring Git"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\git\index.ps1"
+
+Next "Installing apps"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\apps\index.ps1"
 
 Next "Others"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\others\index.ps1"
