@@ -1,8 +1,11 @@
 #Include "%A_ScriptDir%\komorebic.lib.ahk"
 
 #\:: {
-  Retile()
   Reload
+}
+
+#+\:: {
+  RunWait("komorebic stop && cargo build && Start-ScheduledTask -TaskName KomorebiStart")
 }
 
 ; Focus windows
@@ -16,16 +19,16 @@ RAlt & d:: Focus("right")
 
 ; Move windows
 ;#+Enter:: Promote()
-#Left::Move("left")
-#Right::Move("right")
-#Up::Move("up")
-#Down::Move("down")
+#Left:: Move("left")
+#Right:: Move("right")
+#Up:: Move("up")
+#Down:: Move("down")
 
 ; Stack windows
-#w::Stack("up")
-#a::Stack("left")
-#s::Stack("down")
-#d::Stack("right")
+#w:: Stack("up")
+#a:: Stack("left")
+#s:: Stack("down")
+#d:: Stack("right")
 #;:: Unstack()
 #+q:: CycleStack("previous")
 #q:: CycleStack("next")
@@ -69,3 +72,5 @@ RAlt & d:: Focus("right")
 !+3:: MoveToNamedWorkspace("Editors")
 !+4:: MoveToNamedWorkspace("Terminals")
 !+5:: MoveToNamedWorkspace("Other")
+
+#m:: ToggleMonocle()

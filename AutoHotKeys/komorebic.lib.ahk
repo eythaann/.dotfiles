@@ -122,7 +122,6 @@ CycleMoveToMonitor(cycle_direction) {
 
 MoveToWorkspace(target) {
   RunWait("komorebic.exe move-to-workspace " target, , "Hide")
-  PrintWorkspaceMesagge(target)
 }
 
 MoveToNamedWorkspace(workspace) {
@@ -164,18 +163,34 @@ FocusMonitor(target) {
 
 FocusWorkspace(target) {
   RunWait("komorebic.exe focus-workspace " target, , "Hide")
-  PrintWorkspaceMesagge(target)
 }
 
 FocusMonitorWorkspace(target_monitor, target_workspace) {
   RunWait("komorebic.exe focus-monitor-workspace " target_monitor " " target_workspace, , "Hide")
 }
 
-FocusNamedWorkspace(workspace) {
-  ;RunWait("komorebic.exe focus-named-workspace NULL", , "Hide")
-  ;SetTimer(() => RunWait("komorebic.exe focus-named-workspace " workspace, , "Hide"), -200)
-  RunWait("komorebic.exe focus-named-workspace " workspace, , "Hide")
-  PrintWorkspaceMesagge(workspace)
+global lastExecutionTime := 0
+global workspaceToFocus := ""
+global timerCalled := false
+FocusNamedWorkspace(workspace := "") {
+  global lastExecutionTime
+  global workspaceToFocus
+  global timerCalled
+  currentTime := A_TickCount
+
+  if (workspace) {
+    workspaceToFocus := workspace
+  }
+
+  if (currentTime - lastExecutionTime >= 800) {
+    RunWait("komorebic.exe focus-named-workspace " workspaceToFocus, , "Hide")
+    PrintWorkspaceMesagge(workspaceToFocus)
+    lastExecutionTime := currentTime
+    timerCalled := false
+  } else if (!timerCalled) {
+    timerCalled := true
+    SetTimer(FocusNamedWorkspace, -(currentTime - lastExecutionTime))
+  }
 }
 
 CycleMonitor(cycle_direction) {

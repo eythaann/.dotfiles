@@ -1,30 +1,61 @@
 {
-  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/master/schema.json",
-  "app_specific_configuration_path": "$Env:USERPROFILE/.config/komorebi/applications.yml",
+  "$schema": "../../../source/repos/komorebi/schema.json",
+  "app_specific_configuration_path": "~/.config/komorebi/applications.yml",
   "window_hiding_behaviour": "Minimize",
   "alt_focus_hack": false,
-  "default_workspace_padding": 16,
+  "auto_stack_by_category": true,
+  "default_workspace_padding": 10,
   "default_container_padding": 10,
   "mouse_follows_focus": false,
   "global_work_area_offset": {
     "left": 0,
     "top": 0,
     "right": 0,
-    "bottom": 80
+    "bottom": 90
+  },
+  "top_bar": {
+    "height": 40,
+    "mode": "OnStack",
+    "tabs": {
+      "width": 200,
+      "color": "#efefef",
+      "background": "#151515"
+    }
+  },
+  "animations": {
+    "finish_miminization_before_restore": true,
+    "native_animations_delay": 35
   },
   "float_rules": [
     {
-      "kind": "Title",
-      "id": "(.*[Ii]nstall.*)|(.*[Ss]etup.*)|(.*[Cc]omplete.*)",
-      "matching_strategy": "Regex"
-    },
-    {
-      "kind": "Exe",
-      "id": "steam.exe"
-    },
-    {
       "kind": "Exe",
       "id": "steamwebhelper.exe"
+    }
+  ],
+  "exclude_float_rules": [
+    {
+      "kind": "Title",
+      "id": "Steam",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "unmanage_rules": [
+    {
+      "kind": "Exe",
+      "id": "komorebi-ui.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "electron.exe"
+    },
+    {
+      "kind": "Exe",
+      "id": "SnippingTool.exe"
+    },
+    {
+      "kind": "Title",
+      "id": "(?i)((install)|(setup)|(complete)|(menu))",
+      "matching_strategy": "Regex"
     }
   ],
   "monitors": [
@@ -36,6 +67,10 @@
           "workspace_rules": [
             {
               "id": "Spark Desktop.exe",
+              "kind": "Exe"
+            },
+            {
+              "id": "Discord.exe",
               "kind": "Exe"
             }
           ]
@@ -78,12 +113,12 @@
               "id": "Docker",
               "kind": "Title",
               "matching_strategy": "Contains"
+            },
+            {
+              "kind": "Exe",
+              "id": "steamwebhelper.exe"
             }
           ]
-        },
-        {
-          "name": "NULL",
-          "layout": "BSP"
         }
       ]
     }
