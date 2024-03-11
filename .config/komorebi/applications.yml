@@ -1,72 +1,131 @@
-- name: VsCode
-  category: editor
+- name: NordPass.exe
   identifier:
-    id: Code.exe
+    id: NordPass.exe
     kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: KeePassXC.exe
+  identifier:
+    id: KeePassXC.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: AutoHotkey64.exe
+  identifier:
+    id: AutoHotkey64.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: pinentry.exe
+  identifier:
+    id: pinentry.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Content Manager.exe
+  identifier:
+    id: Content Manager.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Assetto Corsa
+  identifier:
+    id: Assetto Corsa
+    kind: Title
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: rpcs3.exe
+  identifier:
+    id: rpcs3.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: electron.exe
+  identifier:
+    id: electron.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: SnippingTool.exe
+  identifier:
+    id: SnippingTool.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: (?i)((install)|(setup)|(complete)|(menu))
+  identifier:
+    id: (?i)((install)|(setup)|(complete)|(menu))
+    kind: Title
+    matching_strategy: Regex
+  options:
+    - unmanage
+- name: steamwebhelper.exe
+  binded_monitor: 0
+  binded_workspace: Other
+  identifier:
+    id: steamwebhelper.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - float
+- name: Steam
+  identifier:
+    id: Steam
+    kind: Title
     matching_strategy: Equals
-
-- name: Spark
-  category: messaging
-  workspace: media
+  options:
+    - force
+- name: Spark Desktop.exe
+  category: message
+  binded_monitor: 0
+  binded_workspace: Media
   identifier:
     id: Spark Desktop.exe
     kind: Exe
-    matching_strategy: Equals
-
-- name: Discord
-  category: messaging
-  workspace: media
+    matching_strategy: Legacy
+- name: Discord.exe
+  category: message
+  binded_monitor: 0
+  binded_workspace: Media
   identifier:
     id: Discord.exe
     kind: Exe
-    matching_strategy: Equals
-
-- name: NordPass
+    matching_strategy: Legacy
+- name: firefox.exe
+  binded_monitor: 0
+  binded_workspace: Browsers
   identifier:
+    id: firefox.exe
     kind: Exe
-    id: NordPass.exe
-  float_identifiers:
-    - kind: Exe
-      id: NordPass.exe
-
-- name: Keepass
+    matching_strategy: Legacy
+- name: Code.exe
+  category: editor
+  binded_monitor: 0
+  binded_workspace: Editors
   identifier:
+    id: Code.exe
     kind: Exe
-    id: KeePassXC.exe
-  float_identifiers:
-    - kind: Exe
-      id: KeePassXC.exe
-
-- name: AutoHotkey
+    matching_strategy: Legacy
+- name: WindowsTerminal.exe
+  binded_monitor: 0
+  binded_workspace: Terminals
   identifier:
+    id: WindowsTerminal.exe
     kind: Exe
-    id: AutoHotkey64.exe
-  float_identifiers:
-    - kind: Exe
-      id: AutoHotkey64.exe
-
-- name: pinentry
+    matching_strategy: Legacy
+- name: Docker
+  binded_monitor: 0
+  binded_workspace: Other
   identifier:
-    kind: Exe
-    id: pinentry.exe
-  float_identifiers:
-    - kind: Exe
-      id: pinentry.exe
-
-- name: Assetto
-  identifier:
-    kind: Exe
-    id: "Content Manager.exe"
-  float_identifiers:
-    - kind: Exe
-      id: "Content Manager.exe"
-    - kind: Title
-      id: Assetto Corsa
-
-- name: PS3
-  identifier:
-    kind: Exe
-    id: "rpcs3.exe"
-  float_identifiers:
-    - kind: Exe
-      id: "rpcs3.exe"
+    id: Docker
+    kind: Title
+    matching_strategy: Contains

@@ -1,0 +1,1839 @@
+- name: ueli.exe
+  template: true
+  identifier:
+    id: ueli.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: ueli
+  template: true
+  identifier:
+    id: ueli.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: todoist
+  template: true
+  identifier:
+    id: Todoist.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: qBittorrent
+  template: true
+  identifier:
+    id: qbittorrent.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: pinentry.exe
+  template: true
+  identifier:
+    id: pinentry.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: paintdotnet.exe
+  template: true
+  identifier:
+    id: paintdotnet.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: mpv.net
+  template: true
+  identifier:
+    id: mpvnet.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - object_name_change
+- name: mpv
+  template: true
+  identifier:
+    id: mpv
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - object_name_change
+- name: Zoom.exe
+  template: true
+  identifier:
+    id: Zoom.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: XAMPP Control Panel
+  template: true
+  identifier:
+    id: xampp-control.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Hotkey sink
+  template: true
+  identifier:
+    id: Hotkey sink
+    kind: Title
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: WingetUI
+  template: true
+  identifier:
+    id: wingetui.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: WingetUI
+  template: true
+  identifier:
+    id: WingetUI.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: android(splash)
+  template: true
+  identifier:
+    id: android(splash)
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: msiexec.exe
+  template: true
+  identifier:
+    id: msiexec.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Control Panel
+  template: true
+  identifier:
+    id: Control Panel
+    kind: Title
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: OperationStatusWindow
+  template: true
+  identifier:
+    id: OperationStatusWindow
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Windows Console (conhost.exe)
+  template: true
+  identifier:
+    id: ConsoleWindowClass
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - force
+- name: winzip64.exe
+  template: true
+  identifier:
+    id: winzip64.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: winzip32.exe
+  template: true
+  identifier:
+    id: winzip32.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: WebTorrent Desktop
+  template: true
+  identifier:
+    id: WebTorrent.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: SunAwtDialog
+  template: true
+  identifier:
+    id: SunAwtDialog
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: WebStorm
+  template: true
+  identifier:
+    id: webstorm64.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - object_name_change
+    - tray_and_multi_window
+- name: Voice.ai
+  template: true
+  identifier:
+    id: VoiceAI.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Visual Studio Code - Insiders
+  template: true
+  identifier:
+    id: Code - Insiders.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Visual Studio Code
+  template: true
+  identifier:
+    id: Code.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Visual Studio
+  template: true
+  identifier:
+    id: devenv.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - object_name_change
+- name: VRCX
+  template: true
+  identifier:
+    id: VRCX.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: VMware Horizon Client
+  template: true
+  identifier:
+    id: vmware-view.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Unreal Editor
+  template: true
+  identifier:
+    id: UnrealEditor.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Unity Hub
+  template: true
+  identifier:
+    id: Unity Hub.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: TranslucentTB
+  template: true
+  identifier:
+    id: TranslucentTB.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: TranslucentTB.exe
+  template: true
+  identifier:
+    id: TranslucentTB.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: tcconfig.exe
+  template: true
+  identifier:
+    id: tcconfig.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: TouchCursor
+  template: true
+  identifier:
+    id: tcconfig.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: TDLG2FILEACTIONMIN
+  template: true
+  identifier:
+    id: TDLG2FILEACTIONMIN
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: TickTick
+  template: true
+  identifier:
+    id: TickTick.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Telegram
+  template: true
+  identifier:
+    id: Telegram.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: TaskManagerWindow
+  template: true
+  identifier:
+    id: TaskManagerWindow
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Shell_Dialog
+  template: true
+  identifier:
+    id: Shell_Dialog
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: SystemInformer.exe
+  template: true
+  identifier:
+    id: SystemInformer.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: System Informer
+  template: true
+  identifier:
+    id: SystemInformer.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Stremio
+  template: true
+  identifier:
+    id: stremio.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: notificationtoasts_
+  template: true
+  identifier:
+    id: notificationtoasts_
+    kind: Title
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Spotify
+  template: true
+  identifier:
+    id: Spotify.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: SoulseekQt
+  template: true
+  identifier:
+    id: SoulseekQt.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: SnippingTool.exe
+  template: true
+  identifier:
+    id: SnippingTool.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: obj_Form
+  template: true
+  identifier:
+    id: obj_Form
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: obj_App
+  template: true
+  identifier:
+    id: obj_App
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Chrome_RenderWidgetHostHWND
+  template: true
+  identifier:
+    id: Chrome_RenderWidgetHostHWND
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Slack
+  template: true
+  identifier:
+    id: slack.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Chrome_RenderWidgetHostHWND
+  template: true
+  identifier:
+    id: Chrome_RenderWidgetHostHWND
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Slack
+  template: true
+  identifier:
+    id: Slack.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: SiriKali
+  template: true
+  identifier:
+    id: sirikali.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Signal
+  template: true
+  identifier:
+    id: Signal.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: sideloadly.exe
+  template: true
+  identifier:
+    id: sideloadly.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: ShareX
+  template: true
+  identifier:
+    id: ShareX.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Sandboxie Plus
+  template: true
+  identifier:
+    id: SandMan.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: SunAwtDialog
+  template: true
+  identifier:
+    id: SunAwtDialog
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: RustRover
+  template: true
+  identifier:
+    id: rustrover64.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - object_name_change
+    - tray_and_multi_window
+- name: RoundedTB
+  template: true
+  identifier:
+    id: RoundedTB.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: RoundedTB.exe
+  template: true
+  identifier:
+    id: RoundedTB.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Roblox FPS Unlocker
+  template: true
+  identifier:
+    id: rbxfpsunlocker.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: PopupMessageWindow
+  template: true
+  identifier:
+    id: PopupMessageWindow
+    kind: Title
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: SunAwtDialog
+  template: true
+  identifier:
+    id: SunAwtDialog
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Rider
+  template: true
+  identifier:
+    id: rider64.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - object_name_change
+    - tray_and_multi_window
+- name: RepoZ.exe
+  template: true
+  identifier:
+    id: RepoZ.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: QuickLook.exe
+  template: true
+  identifier:
+    id: QuickLook.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: QtScrcpy
+  template: true
+  identifier:
+    id: QtScrcpy.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: QQ
+  template: true
+  identifier:
+    id: QQ.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: SunAwtDialog
+  template: true
+  identifier:
+    id: SunAwtDialog
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: PyCharm
+  template: true
+  identifier:
+    id: pycharm64.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - object_name_change
+    - tray_and_multi_window
+- name: ProtonVPN
+  template: true
+  identifier:
+    id: ProtonVPN.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: ProtonDrive
+  template: true
+  identifier:
+    id: ProtonDrive.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: ProcessHacker.exe
+  template: true
+  identifier:
+    id: ProcessHacker.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Process Hacker
+  template: true
+  identifier:
+    id: ProcessHacker.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: PowerToys.PowerAccent.exe
+  template: true
+  identifier:
+    id: PowerToys.PowerAccent.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: PowerToys.PowerLauncher.exe
+  template: true
+  identifier:
+    id: PowerToys.PowerLauncher.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: PowerToys.Peek.UI.exe
+  template: true
+  identifier:
+    id: PowerToys.Peek.UI.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: PowerToys.ImageResizer.exe
+  template: true
+  identifier:
+    id: PowerToys.ImageResizer.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: PowerToys.CropAndLock.exe
+  template: true
+  identifier:
+    id: PowerToys.CropAndLock.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: PowerToys.ColorPickerUI.exe
+  template: true
+  identifier:
+    id: PowerToys.ColorPickerUI.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Postman
+  template: true
+  identifier:
+    id: Postman.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Plexamp
+  template: true
+  identifier:
+    id: Plexamp.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Playnite.FullscreenApp.exe
+  template: true
+  identifier:
+    id: Playnite.FullscreenApp.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Playnite
+  template: true
+  identifier:
+    id: Playnite.DesktopApp.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Passware Kit Forensic
+  template: true
+  identifier:
+    id: PasswareKitForensic.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Paradox Launcher.exe
+  template: true
+  identifier:
+    id: Paradox Launcher.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: OpenRGB
+  template: true
+  identifier:
+    id: OpenRGB.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: OneQuick
+  template: true
+  identifier:
+    id: OneQuick.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: OneDriveReactNativeWin32WindowClass
+  template: true
+  identifier:
+    id: OneDriveReactNativeWin32WindowClass
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Obsidian
+  template: true
+  identifier:
+    id: Obsidian.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - force
+- name: ONLYOFFICE Editors
+  template: true
+  identifier:
+    id: DocEditorsWindowClass
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - tray_and_multi_window
+- name: OBS Studio (64-bit)
+  template: true
+  identifier:
+    id: obs64.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: OBS Studio (32-bit)
+  template: true
+  identifier:
+    id: obs32.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Notion Enhanced
+  template: true
+  identifier:
+    id: Notion Enhanced.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: NohBoard.exe
+  template: true
+  identifier:
+    id: NohBoard.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: NiceHash Miner
+  template: true
+  identifier:
+    id: nhm_app.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - force
+- name: NetEase Cloud Music
+  template: true
+  identifier:
+    id: cloudmusic.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: NZXT CAM
+  template: true
+  identifier:
+    id: NZXT CAM.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: NVIDIA GeForce Experience
+  template: true
+  identifier:
+    id: NVIDIA GeForce Experience.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: MuseScore
+  template: true
+  identifier:
+    id: MuseScore.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: MozillaTaskbarPreviewClass
+  template: true
+  identifier:
+    id: MozillaTaskbarPreviewClass
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Mozilla Firefox
+  template: true
+  identifier:
+    id: firefox.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - object_name_change
+    - tray_and_multi_window
+- name: Morgen
+  template: true
+  identifier:
+    id: Morgen.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Modern Flyouts
+  template: true
+  identifier:
+    id: ModernFlyoutsHost.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: _WwB
+  template: true
+  identifier:
+    id: _WwB
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Microsoft Word
+  template: true
+  identifier:
+    id: WINWORD.EXE
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - layered
+- name: Microsoft Teams Call
+  template: true
+  identifier:
+    id: Microsoft Teams Call
+    kind: Title
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Microsoft Teams Notification
+  template: true
+  identifier:
+    id: Microsoft Teams Notification
+    kind: Title
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Microsoft Teams classic
+  template: true
+  identifier:
+    id: Teams.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Microsoft Teams
+  template: true
+  identifier:
+    id: TeamsWebView
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - tray_and_multi_window
+- name: Microsoft SQL Server Management Studio
+  template: true
+  identifier:
+    id: Ssms.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: _WwB
+  template: true
+  identifier:
+    id: _WwB
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Microsoft PowerPoint
+  template: true
+  identifier:
+    id: POWERPNT.EXE
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - layered
+- name: MSPCManager.exe
+  template: true
+  identifier:
+    id: MSPCManager.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: _WwB
+  template: true
+  identifier:
+    id: _WwB
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Microsoft Outlook
+  template: true
+  identifier:
+    id: OUTLOOK.EXE
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - layered
+    - tray_and_multi_window
+- name: _WwB
+  template: true
+  identifier:
+    id: _WwB
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Microsoft Excel
+  template: true
+  identifier:
+    id: EXCEL.EXE
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - layered
+- name: '#32770'
+  template: true
+  identifier:
+    id: '#32770'
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Mica For Everyone
+  template: true
+  identifier:
+    id: MicaForEveryone.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Mattermost
+  template: true
+  identifier:
+    id: Mattermost.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: ManyCam
+  template: true
+  identifier:
+    id: ManyCam.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: ManicTime
+  template: true
+  identifier:
+    id: ManicTimeClient.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - force
+    - object_name_change
+    - tray_and_multi_window
+- name: Mailspring
+  template: true
+  identifier:
+    id: mailspring.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: LogiOptionsUI.exe
+  template: true
+  identifier:
+    id: LogiOptionsUI.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Logitech G HUB
+  template: true
+  identifier:
+    id: lghub.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: LogiTune.exe
+  template: true
+  identifier:
+    id: LogiTune.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: LogiTune
+  template: true
+  identifier:
+    id: LogiTune.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: LogiBolt.exe
+  template: true
+  identifier:
+    id: LogiBolt.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: LocalSend
+  template: true
+  identifier:
+    id: localsend_app.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Kotatogram
+  template: true
+  identifier:
+    id: Kotatogram.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Kleopatra
+  template: true
+  identifier:
+    id: kleopatra.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: keyviz.exe
+  template: true
+  identifier:
+    id: keyviz.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: KOOK
+  template: true
+  identifier:
+    id: KOOK.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Itch.io
+  template: true
+  identifier:
+    id: itch.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: SunAwtDialog
+  template: true
+  identifier:
+    id: SunAwtDialog
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: IntelliJ IDEA
+  template: true
+  identifier:
+    id: idea64.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - object_name_change
+    - tray_and_multi_window
+- name: Houdoku
+  template: true
+  identifier:
+    id: Houdoku.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Honeyview
+  template: true
+  identifier:
+    id: HoneyviewClassX
+    kind: Class
+    matching_strategy: Legacy
+- name: GoogleDriveFS.exe
+  template: true
+  identifier:
+    id: GoogleDriveFS.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Google Drive
+  template: true
+  identifier:
+    id: GoogleDriveFS.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Google Chrome
+  template: true
+  identifier:
+    id: chrome.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Golden Dict
+  template: true
+  identifier:
+    id: GoldenDict.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Godot Manager
+  template: true
+  identifier:
+    id: GodotManager.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - force
+    - object_name_change
+- name: GoPro Webcam
+  template: true
+  identifier:
+    id: GoPro Webcam
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - tray_and_multi_window
+- name: GitHub Desktop
+  template: true
+  identifier:
+    id: GitHubDesktop.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: git-credential-manager.exe
+  template: true
+  identifier:
+    id: git-credential-manager.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Chrome_RenderWidgetHostHWND
+  template: true
+  identifier:
+    id: Chrome_RenderWidgetHostHWND
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: GOG Galaxy
+  template: true
+  identifier:
+    id: GalaxyClient.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - force
+    - tray_and_multi_window
+- name: Flow Launcher
+  template: true
+  identifier:
+    id: Flow.Launcher.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Files
+  template: true
+  identifier:
+    id: Files.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Figma
+  template: true
+  identifier:
+    id: Figma.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: FFMetrics
+  template: true
+  identifier:
+    id: FFMetrics.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Everything1.5a
+  template: true
+  identifier:
+    id: EVERYTHING_(1.5a)
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - force
+    - tray_and_multi_window
+- name: Everything
+  template: true
+  identifier:
+    id: EVERYTHING
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - tray_and_multi_window
+- name: WaveLink.exe
+  template: true
+  identifier:
+    id: WaveLink.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: ControlCenter.exe
+  template: true
+  identifier:
+    id: ControlCenter.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Camera Hub.exe
+  template: true
+  identifier:
+    id: Camera Hub.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: ElevenClock
+  template: true
+  identifier:
+    id: ElevenClock.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Elephicon.exe
+  template: true
+  identifier:
+    id: Elephicon.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Element
+  template: true
+  identifier:
+    id: Element.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: ElectronMail
+  template: true
+  identifier:
+    id: ElectronMail.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Eagle
+  template: true
+  identifier:
+    id: Eagle.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: EA Desktop Client
+  template: true
+  identifier:
+    id: EADesktop.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Dropbox.exe
+  template: true
+  identifier:
+    id: Dropbox.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Docker Desktop
+  template: true
+  identifier:
+    id: Docker Desktop.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: DiscordPTB
+  template: true
+  identifier:
+    id: DiscordPTB.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: DiscordDevelopment
+  template: true
+  identifier:
+    id: DiscordDevelopment.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: DiscordCanary
+  template: true
+  identifier:
+    id: DiscordCanary.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Discord Bot Client
+  template: true
+  identifier:
+    id: DiscordBotClient.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Discord
+  template: true
+  identifier:
+    id: Discord.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - force
+    - tray_and_multi_window
+- name: TWizardForm
+  template: true
+  identifier:
+    id: TWizardForm
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: TApplication
+  template: true
+  identifier:
+    id: TApplication
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: DS4Windows
+  template: true
+  identifier:
+    id: DS4Windows.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Cron
+  template: true
+  identifier:
+    id: Cron.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: CredentialUIBroker.exe
+  template: true
+  identifier:
+    id: CredentialUIBroker.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: CopyQ
+  template: true
+  identifier:
+    id: copyq.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Clementine
+  template: true
+  identifier:
+    id: clementine.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Clash Verge
+  template: true
+  identifier:
+    id: Clash Verge.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: SelfService.exe
+  template: true
+  identifier:
+    id: SelfService.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Citrix Receiver
+  template: true
+  identifier:
+    id: SelfService.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Calculator
+  template: true
+  identifier:
+    id: Calculator
+    kind: Title
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: SunAwtDialog
+  template: true
+  identifier:
+    id: SunAwtDialog
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: CLion
+  template: true
+  identifier:
+    id: clion64.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - object_name_change
+    - tray_and_multi_window
+- name: Brave Browser
+  template: true
+  identifier:
+    id: brave.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Bloxstrap.exe
+  template: true
+  identifier:
+    id: Bloxstrap.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Blitz
+  template: true
+  identifier:
+    id: Blitz.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Bitwarden
+  template: true
+  identifier:
+    id: Bitwarden.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Beeper
+  template: true
+  identifier:
+    id: Beeper.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: AutoHotkeyUX.exe
+  template: true
+  identifier:
+    id: AutoHotkeyUX.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Window Spy
+  template: true
+  identifier:
+    id: Window Spy
+    kind: Title
+    matching_strategy: StartsWith
+  options:
+    - unmanage
+- name: AutoHotkey
+  template: true
+  identifier:
+    id: AutoHotkeyU64.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: ArmCord
+  template: true
+  identifier:
+    id: ArmCord.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Photo.exe
+  template: true
+  identifier:
+    id: Photo.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Akiflow
+  template: true
+  identifier:
+    id: Akiflow.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Android Studio
+  template: true
+  identifier:
+    id: studio64.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - object_name_change
+- name: Anki
+  template: true
+  identifier:
+    id: anki.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Affinity Photo 2
+  template: true
+  identifier:
+    id: Affinity Photo 2
+    kind: Title
+    matching_strategy: Legacy
+  options:
+    - force
+- name: DroverLord - Window Class
+  template: true
+  identifier:
+    id: DroverLord - Window Class
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Vst3PlugWindow
+  template: true
+  identifier:
+    id: Vst3PlugWindow
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: AbletonVstPlugClass
+  template: true
+  identifier:
+    id: AbletonVstPlugClass
+    kind: Class
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: 1Password.exe
+  template: true
+  identifier:
+    id: 1Password.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Guitar Rig 7.exe
+  template: true
+  identifier:
+    id: Guitar Rig 7.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Base
+  template: true
+  identifier:
+    id: (?i)((install)|(setup)|(complete)|(menu)|(notification))
+    kind: Title
+    matching_strategy: Regex
+  options:
+    - unmanage
+- name: Electron Apps
+  template: true
+  identifier:
+    id: Chrome_WidgetWin_1
+    kind: Class
+    matching_strategy: Equals
+- name: Explorer
+  template: true
+  identifier:
+    id: explorer.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Steam
+  template: true
+  identifier:
+    id: (steamwebhelper.exe)|(steam.exe)
+    kind: Exe
+    matching_strategy: Regex
+  options:
+    - unmanage
+- name: Main Steam Window
+  template: true
+  identifier:
+    id: Steam
+    kind: Title
+    matching_strategy: Equals
+  options:
+    - force
+- name: Epic Games Launcher
+  template: true
+  identifier:
+    id: EpicGamesLauncher.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Adobe Creative Cloud
+  template: true
+  identifier:
+    id: CreativeCloudDesktopWindowClass
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - tray_and_multi_window
+- name: Adobe Photoshop
+  template: true
+  identifier:
+    id: Photoshop
+    kind: Class
+    matching_strategy: Equals
+- name: Photoshop Dialogs
+  template: true
+  identifier:
+    id: PSDialogBox
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Code.exe
+  template: true
+  identifier:
+    id: Code.exe
+    kind: Exe
+    matching_strategy: Legacy
+- name: WTerminal
+  template: true
+  identifier:
+    id: WindowsTerminal.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Docker Desktop
+  template: true
+  identifier:
+    id: Docker Desktop.exe
+    kind: exe
+    matching_strategy: Equals
+- name: Pinetry
+  template: true
+  identifier:
+    id: pinentry.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Electron
+  template: true
+  identifier:
+    id: electron.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: NordPass.exe
+  identifier:
+    id: NordPass.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: KeePassXC.exe
+  identifier:
+    id: KeePassXC.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Content Manager.exe
+  identifier:
+    id: Content Manager.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Assetto Corsa
+  identifier:
+    id: Assetto Corsa
+    kind: Title
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: rpcs3.exe
+  identifier:
+    id: rpcs3.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: SnippingTool.exe
+  identifier:
+    id: SnippingTool.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: electron.exe
+  identifier:
+    id: electron.exe
+    kind: Exe
+    matching_strategy: Legacy
+  options:
+    - unmanage
+- name: Docker
+  binded_monitor: 0
+  binded_workspace: Other
+  identifier:
+    id: Docker
+    kind: Title
+    matching_strategy: Contains
+- name: firefox.exe
+  binded_monitor: 0
+  binded_workspace: Browsers
+  identifier:
+    id: firefox.exe
+    kind: Exe
+    matching_strategy: Legacy
+- name: Explorer
+  identifier:
+    id: explorer.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: WTerminal
+  binded_monitor: 0
+  binded_workspace: Terminals
+  identifier:
+    id: WindowsTerminal.exe
+    kind: Exe
+    matching_strategy: Equals
+- name: Spark Desktop.exe
+  category: message
+  binded_monitor: 0
+  binded_workspace: Media
+  identifier:
+    id: Spark Desktop.exe
+    kind: Exe
+    matching_strategy: Legacy
+- name: Discord.exe
+  category: message
+  binded_monitor: 0
+  binded_workspace: Media
+  identifier:
+    id: Discord.exe
+    kind: Exe
+    matching_strategy: Legacy
+- name: Code.exe
+  category: editor
+  binded_monitor: 0
+  binded_workspace: Editors
+  identifier:
+    id: Code.exe
+    kind: Exe
+    matching_strategy: Legacy
+- name: AutoHotkey
+  identifier:
+    id: AutoHotkey.*\.exe
+    kind: Exe
+    matching_strategy: Regex
+  options:
+    - unmanage
+- name: Steam
+  identifier:
+    id: Steam
+    kind: Path
+    matching_strategy: Contains
+  options:
+    - unmanage
+- name: Photoshop
+  identifier:
+    id: PSDialogBox
+    kind: Class
+    matching_strategy: Equals
+  options:
+    - unmanage
+- name: Xbox Login
+  identifier:
+    id: gamingservicestcui.exe
+    kind: Exe
+    matching_strategy: Equals
+  options:
+    - unmanage

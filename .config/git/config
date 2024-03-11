@@ -14,3 +14,5 @@
 	autoSetupRemote = true
 [submodule]
 	recurse = true
+[core]
+	editor = code --wait
