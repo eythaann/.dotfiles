@@ -1,7 +1,7 @@
 Write-Host "`nUpdating PowerShell"
 winget install Microsoft.PowerShell -s winget
 
-Write-Host "`nInstaling Firefox adn Thunderbird"
+Write-Host "`nInstaling Firefox"
 winget install --id Mozilla.Firefox
 winget install --id filips.FirefoxPWA
 
@@ -46,6 +46,3 @@ winget install deno
 
 Write-Host "`nInstaling Zoom"
 winget install --id XP99J3KP4XZ4VV
-
-Write-Host "`nInstaling Komorebi"
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.dotfiles\installers\apps\komorebi.ps1"
