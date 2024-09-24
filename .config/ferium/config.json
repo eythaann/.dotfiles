@@ -3,9 +3,9 @@
   "active_modpack": 0,
   "profiles": [
     {
-      "name": "eythan-with-mods",
+      "name": "personal-survival",
       "output_dir": "\\\\?\\C:\\Users\\dlmqc\\OneDrive\\Documents\\minecraft\\mods",
-      "game_version": "1.20.2",
+      "game_version": "1.20.4",
       "mod_loader": "Fabric",
       "mods": [
         {

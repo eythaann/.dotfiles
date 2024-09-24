@@ -103,7 +103,7 @@
           "type": "text",
           "style": "plain",
           "foreground": "#ff3142",
-          "template": "= @{{.UserName}} =>"
+          "template": "= @eythaann =>"
         }
       ]
     }

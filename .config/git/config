@@ -16,3 +16,4 @@
 	recurse = true
 [core]
 	editor = code --wait
+	autocrlf = false
