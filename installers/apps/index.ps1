@@ -38,11 +38,5 @@ winget install OpenJS.NodeJS.LTS -s winget
 Write-Host "`nInstaling Rust"
 winget install --id Rustlang.Rustup
 
-# vscode extensions publisher
-npm install -g @vscode/vsce
-
 Write-Host "`nInstaling Deno"
 winget install deno
-
-Write-Host "`nInstaling Zoom"
-winget install --id XP99J3KP4XZ4VV
