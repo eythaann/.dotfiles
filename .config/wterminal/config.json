@@ -59,7 +59,7 @@
         "defaults": 
         {
             "backgroundImage": "C:\\Users\\dlmqc\\OneDrive\\Desktop\\_\\Temas\\Terminal\\seelen.png",
-            "backgroundImageOpacity": 1,
+            "backgroundImageOpacity": 0,
             "colorScheme": "cyberpunk",
             "font": 
             {
@@ -68,7 +68,7 @@
                 "weight": "normal"
             },
             "intenseTextStyle": "bright",
-            "opacity": 100,
+            "opacity": 80,
             "padding": "16",
             "scrollbarState": "hidden"
         },
@@ -91,13 +91,6 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -nologo",
-                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-                "hidden": false,
-                "name": "PowerShell",
-                "source": "Windows.Terminal.PowershellCore"
             },
             {
                 "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
@@ -160,7 +153,7 @@
             "background": "#1C1B21",
             "black": "#000000",
             "blue": "#00A2D9",
-            "brightBlack": "#404040",
+            "brightBlack": "#1C1C1C",
             "brightBlue": "#1BCCFD",
             "brightCyan": "#99D6FC",
             "brightGreen": "#21F6BC",
