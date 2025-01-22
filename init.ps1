@@ -1,6 +1,7 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force
 
-winget install Git.Git
+winget install --id Git.Git
+winget install --id GitHub.cli
 
 # Add Git to the system PATH if it's not already there
 $gitPath = "C:\Program Files\Git\cmd"

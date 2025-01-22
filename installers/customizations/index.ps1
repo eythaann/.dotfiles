@@ -7,3 +7,5 @@ New-Item -Path "$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTermina
 # Settings profile folfer
 #$rutaRegistro = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders'
 #New-ItemProperty -Path $rutaRegistro -Name Personal -Value '%USERPROFILE%\.config' -Type ExpandString -Force
+
+~\.dotfiles\installers\customizations\fonts.ps1

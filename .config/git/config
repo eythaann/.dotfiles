@@ -1,7 +1,7 @@
 [user]
 	email = eythan.cvt@gmail.com
 	name = eythaann
-	signingkey = ~/.ssh/id_ed25519.pub
+	signingkey = ~/.ssh/github.pub
 [gpg]
 	format = ssh
 [safe]

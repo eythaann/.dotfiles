@@ -9,7 +9,7 @@ Write-Host "`nInstaling KeePassXC"
 winget install --id KeePassXCTeam.KeePassXC
 
 Write-Host "`nInstaling Spark Email Client"
-winget install --id XPFCS9QJBKTHVZ -s msstore
+winget install --id XPFCS9QJBKTHVZ -s msstore --accept-package-agreements
 
 <# Write-Host "`nInstaling NordPass"
 winget settings --enable InstallerHashOverride
@@ -33,10 +33,12 @@ winget install --id AutoHotkey.AutoHotkey
 winget install --id GnuPG.Gpg4win #>
 
 Write-Host "`nInstaling NodeJs"
-winget install OpenJS.NodeJS.LTS -s winget
+winget install --id OpenJS.NodeJS.LTS -s winget
 
 Write-Host "`nInstaling Rust"
 winget install --id Rustlang.Rustup
 
 Write-Host "`nInstaling Deno"
-winget install deno
+winget install --ic DenoLand.Deno
+
+~\.dotfiles\installers\apps\scoop.ps1
