@@ -1,4 +1,5 @@
 winget install JanDeDobbeleer.OhMyPosh -s winget
+oh-my-posh.exe --config "$env:USERPROFILE\.config\OhMyPosh\theme.json"
 
 # Windows Terminal Settings
 Remove-Item "$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"

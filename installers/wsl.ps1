@@ -6,4 +6,4 @@ wsl --update
 wsl --set-default-version 2
 wsl --install -d Debian --web-download
 
-shutdown /r /t 0
+Write-Host "Restart is Recomended"
