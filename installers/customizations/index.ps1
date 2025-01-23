@@ -1,3 +1,5 @@
+winget install Seelen.SeelenUI -s winget
+
 winget install JanDeDobbeleer.OhMyPosh -s winget
 oh-my-posh.exe --config "$env:USERPROFILE\.config\OhMyPosh\theme.json"
 

@@ -39,6 +39,13 @@ Write-Host "`nInstaling Rust"
 winget install --id Rustlang.Rustup
 
 Write-Host "`nInstaling Deno"
-winget install --ic DenoLand.Deno
+winget install --id DenoLand.Deno
+
+Write-Host "`nInstaling MongoDB Compass"
+winget install --id MongoDB.Compass.Community -s winget
+
+Write-Host "`nInstaling Discord Client"
+winget install --id Vencord.Vesktop -s winget
+# winget install --id Discord.Discord -s winget
 
 ~\.dotfiles\installers\apps\scoop.ps1
