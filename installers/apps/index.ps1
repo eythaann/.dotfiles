@@ -44,8 +44,13 @@ winget install --id DenoLand.Deno
 Write-Host "`nInstaling MongoDB Compass"
 winget install --id MongoDB.Compass.Community -s winget
 
+Write-Host "`nInstaling Postman"
+winget install --id Postman.Postman -s winget
+
 Write-Host "`nInstaling Discord Client"
 winget install --id Vencord.Vesktop -s winget
 # winget install --id Discord.Discord -s winget
 
 ~\.dotfiles\installers\apps\scoop.ps1
+
+Write-Host "A dev tool needs manual installation: https://github.com/microsoft/accessibility-insights-windows"
