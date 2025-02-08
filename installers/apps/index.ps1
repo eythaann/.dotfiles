@@ -54,3 +54,15 @@ winget install --id Vencord.Vesktop -s winget
 ~\.dotfiles\installers\apps\scoop.ps1
 
 Write-Host "A dev tool needs manual installation: https://github.com/microsoft/accessibility-insights-windows"
+
+# https://www.msys2.org/
+# winget install --id MSYS2.MSYS2 -s winget
+
+# winget install --id 7zip.7zip -s winget
+
+winget install --id MarcinOtorowski.MSIXHero -s winget
+
+# MSIX Packaging Tool
+winget install --id Microsoft.DotNet.AspNetCore.8 -s winget
+winget install --id Microsoft.DotNet.DesktopRuntime.8 -s winget
+winget install --id 9N5LW3JBCXKF -s msstore --accept-package-agreements
