@@ -11,10 +11,6 @@ winget install --id KeePassXCTeam.KeePassXC
 Write-Host "`nInstaling Spark Email Client"
 winget install --id XPFCS9QJBKTHVZ -s msstore --accept-package-agreements
 
-<# Write-Host "`nInstaling NordPass"
-winget settings --enable InstallerHashOverride
-winget install NordSecurity.NordPass --ignore-security-hash #>
-
 Write-Host "`nInstaling Steam"
 winget install --id Valve.Steam
 
@@ -28,9 +24,6 @@ winget install --id Docker.DockerDesktop
 
 Write-Host "`nInstaling Auto Hot key"
 winget install --id AutoHotkey.AutoHotkey
-
-<# Write-Host "`nInstaling Gpg"
-winget install --id GnuPG.Gpg4win #>
 
 Write-Host "`nInstaling NodeJs"
 winget install --id OpenJS.NodeJS.LTS -s winget
@@ -51,18 +44,14 @@ Write-Host "`nInstaling Discord Client"
 winget install --id Vencord.Vesktop -s winget
 # winget install --id Discord.Discord -s winget
 
-~\.dotfiles\installers\apps\scoop.ps1
-
 Write-Host "A dev tool needs manual installation: https://github.com/microsoft/accessibility-insights-windows"
 
-# https://www.msys2.org/
-# winget install --id MSYS2.MSYS2 -s winget
-
-# winget install --id 7zip.7zip -s winget
-
+# MSIX Hero
 winget install --id MarcinOtorowski.MSIXHero -s winget
-
-# MSIX Packaging Tool
 winget install --id Microsoft.DotNet.AspNetCore.8 -s winget
 winget install --id Microsoft.DotNet.DesktopRuntime.8 -s winget
+
+# MSIX Packaging Tool
 winget install --id 9N5LW3JBCXKF -s msstore --accept-package-agreements
+
+~\.dotfiles\installers\apps\scoop.ps1
