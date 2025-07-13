@@ -16,5 +16,7 @@ alias dotfiles='code ~/.dotfiles'
 
 alias reload-shell='source ~/.bashrc'
 
+. "$HOME/.cargo/env"
+
 eval "$(starship init bash)"
 clear
