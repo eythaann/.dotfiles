@@ -4,16 +4,18 @@
 	signingkey = ~/.ssh/github.pub
 [gpg]
 	format = ssh
-[safe]
-	directory = C:/Users/dlmqc/.dotfiles
-	directory = C:/Users/dlmqc/.dotfiles/DeepType-Theme
-	directory = C:/Users/dlmqc/repos/DeepType-Theme
+[pull]
+	ff = only
+[submodule]
+	recurse = true
 [commit]
 	gpgsign = true
 [push]
 	autoSetupRemote = true
-[submodule]
-	recurse = true
 [core]
 	editor = code --wait
 	autocrlf = false
+[safe]
+	directory = C:/Users/dlmqc/.dotfiles
+	directory = C:/Users/dlmqc/.dotfiles/DeepType-Theme
+	directory = C:/Users/dlmqc/repos/DeepType-Theme

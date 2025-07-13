@@ -1,5 +1,14 @@
 [user]
 	email = eythan.cvt@gmail.com
 	name = eythaann
+	signingkey = ~/.ssh/github.pub
+[gpg]
+	format = ssh
 [pull]
 	ff = only
+[commit]
+	gpgsign = true
+[push]
+	autoSetupRemote = true
+[submodule]
+	recurse = true
