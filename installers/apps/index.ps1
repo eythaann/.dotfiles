@@ -53,5 +53,7 @@ winget install --id Microsoft.DotNet.DesktopRuntime.8 -s winget
 
 # MSIX Packaging Tool
 winget install --id 9N5LW3JBCXKF -s msstore --accept-package-agreements
+# Microsoft Store Developer CLI
+winget install --id 9P53PC5S0PHJ -s msstore --accept-package-agreements
 
 ~\.dotfiles\installers\apps\scoop.ps1
