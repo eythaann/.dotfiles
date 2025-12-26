@@ -15,6 +15,7 @@
 [core]
 	editor = code --wait
 	autocrlf = false
+	ignorecase = false
 [safe]
 	directory = C:/Users/dlmqc/.dotfiles
 	directory = C:/Users/dlmqc/.dotfiles/DeepType-Theme
