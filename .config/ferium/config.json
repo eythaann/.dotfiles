@@ -1,6 +1,4 @@
 {
-  "active_profile": 0,
-  "active_modpack": 0,
   "profiles": [
     {
       "name": "personal-survival",
@@ -124,6 +122,5 @@
         }
       ]
     }
-  ],
-  "modpacks": []
+  ]
 }

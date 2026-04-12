@@ -20,3 +20,8 @@
 	directory = C:/Users/dlmqc/.dotfiles
 	directory = C:/Users/dlmqc/.dotfiles/DeepType-Theme
 	directory = C:/Users/dlmqc/repos/DeepType-Theme
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
