@@ -1,6 +1,10 @@
 Write-Host "`nUpdating PowerShell"
 winget install Microsoft.PowerShell -s winget
 
+Write-Host "`nInstaling console tools"
+winget install BurntSushi.ripgrep.MSVC
+winget install eza-community.eza
+
 Write-Host "`nInstaling Firefox"
 winget install --id Mozilla.Firefox
 winget install --id filips.FirefoxPWA
