@@ -46,14 +46,10 @@ winget install --id Postman.Postman -s winget
 
 Write-Host "`nInstaling Discord Client"
 winget install --id Vencord.Vesktop -s winget
-# winget install --id Discord.Discord -s winget
+winget install --id Discord.Discord -s winget
 
-Write-Host "A dev tool needs manual installation: https://github.com/microsoft/accessibility-insights-windows"
-
-# MSIX Hero
-winget install --id MarcinOtorowski.MSIXHero -s winget
-winget install --id Microsoft.DotNet.AspNetCore.8 -s winget
-winget install --id Microsoft.DotNet.DesktopRuntime.8 -s winget
+# Infisical
+winget install infisical
 
 # MSIX Packaging Tool
 winget install --id 9N5LW3JBCXKF -s msstore --accept-package-agreements
